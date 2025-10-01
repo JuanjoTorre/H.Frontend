@@ -1,0 +1,56 @@
+/*********************************************************CSS DEL FOOTER
+ * ********************************************************************* */
+
+/*Contenedor del footer*/
+.layout__footer{
+    width: 100%;
+    flex-basis: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    background: var(--colorPrincipal);
+    
+}
+
+/*Caja del footer*/
+.footer__box{
+    text-align: center;
+
+}
+.footer__texto{
+    color:var(--colorBlanco);
+    font-size: 1.2rem;
+}
+
+/*Separador del footer*/
+.footer__texto--transparente{
+    color: var(--colorPrincipal);
+
+}
+
+/*Icono de configuracion del footer*/
+.footer__icon{
+opacity: 0.8;
+}
+.footer__enlace:hover .footer__icon{
+    opacity: 1;
+}
+
+
+
+/*
+RESPONSIVE
+*****************************************************************************/
+@media(max-width: 1400px){
+    .footer__enlace{
+        display: none;
+    }
+    .footer__texto--transparente{
+        display: none;
+    }
+}
+@media(max-width: 900px){
+
+    .footer__box{
+        display: none;
+    }
+}

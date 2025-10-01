@@ -1,0 +1,56 @@
+/**************************************CSS DEL FORMULARIO DE ENTRADA
+ * ********************************************************************* */
+.main__entrada{
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.entrada__box{
+    width:30%;
+    height: 350px;
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+    border: 1px solid rgba(79, 107, 215, 0.3);
+    box-shadow: rgba( 79, 107, 215,0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+
+}.entrada__formulario{
+    margin: auto;
+
+
+}
+.entrada__label-usuario{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+
+}
+.entrada__input-usuario{
+    width:30rem;
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+.entrada__label-password{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.entrada__input-password{
+    width: 30rem;
+    height: 3rem;
+    margin-bottom: 5rem;
+}
+.entrada__button{
+    width: 30rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    background: var(--colorPrincipal);
+    color: var(--colorBlanco);
+}

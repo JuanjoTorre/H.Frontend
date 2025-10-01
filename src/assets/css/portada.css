@@ -1,0 +1,31 @@
+/*****************************************************CSS DE LA PORTADA
+ * ********************************************************************* */
+.main__portada{
+    width: 100%;
+    height: 100%;    display: flex;
+
+}
+
+.portada__box{
+    width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5rem;
+    border: 1px solid rgba(79, 107, 215, 0.3);
+    box-shadow: rgba( 79, 107, 215,0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+
+}
+.portada__enlace{
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.portada__enlace--texto{
+    font-size: 3rem;
+    color: var(--colorTexto);
+    font-weight:bold;
+
+}

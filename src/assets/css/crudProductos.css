@@ -1,0 +1,45 @@
+/*****************************************************CSS DE  PRODUCTOS
+ * ********************************************************************* */
+.crud__nuevo-producto{
+    width: 90%;
+}
+.crud__NuevoTexto-producto{
+    width: 20rem;
+}
+.crud__box-producto{
+    width: 90%;
+}
+/* .ancho1{
+    width: 40%;
+} */
+.ancho2{
+    width: 18%;
+}
+.ancho3{
+    width: 5%;
+}
+.ancho4{
+    width: 8%;
+}
+.crud__linea-producto{
+    height: 100px;
+}
+.crud__linea-producto:last-child{
+    margin-bottom: 2rem;
+}
+.linea__imgP{
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding: 0;    
+}
+.linea__texto-descripcionP,
+.linea__texto-nombreP{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.linea__checkbox-box{
+    border: 1px solid var(--colorPrincipal);
+    align-items: center;
+    margin: auto;
+}

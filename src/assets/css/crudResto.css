@@ -1,0 +1,33 @@
+/*******************************************CSS DEL RESTO DE LOS CRUDS
+ * ********************************************************************* */
+.crud__nuevo-resto{
+    width: 30%;
+}
+.crud__NuevoTexto-resto{
+    width: 30rem;
+}
+.crud__box-resto{
+    width:30%;
+}
+
+.titulo__texto-nombreR{
+    width: 70%;
+}
+.titulo__texto-accionR{
+    width: 30%;
+}
+
+.linea__texto-nombreR{
+    width: 70%;
+    height: 50px;
+    text-align:center;
+    font-size: 1.3rem;
+    font-weight: 500;   
+    display: flex;    
+}
+.linea__texto-accionR{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}

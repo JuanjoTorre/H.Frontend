@@ -1,0 +1,13 @@
+.mensaje__box{
+    height: 5rem;
+    margin-top: 5rem;
+}
+.alert{
+    font-size: 2rem;
+}
+.alert__succes{
+    color: green;
+}
+.alert__error{
+    color: red;
+}

@@ -1,0 +1,182 @@
+/************************************ ****CSS DE LA PAGINA DE PRODUCTO
+ * ********************************************************************* */
+.layout__main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+.main__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main__principal{
+   
+    width: 120rem;
+}
+.principal__titulo{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.principal__box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.producto__box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;    
+}
+.producto__imagenBox{
+    flex-basis: 50%;
+
+}
+.producto__infoBox{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+
+}
+.producto__infoCodigo{
+    width: 100%;
+    height: 20%;
+    text-align: left;
+}
+.producto__codigoTitulo{
+    
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+}
+.producto__codigo{
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+
+}
+.producto__infoCaracteristicas{
+    width: 100%;
+    height: 25%;
+    text-align: left;
+    margin-top: 2rem;
+}
+.producto__caracteristicasTitulo{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.producto__caracteristicas{
+    width: 100%;
+    height: 20rem;
+    text-align: justify;
+
+
+}
+.producto__volver{
+    width: 100%;
+    height: 5rem;
+
+    position: relative;
+    bottom: 3rem;
+    margin: auto;
+
+
+    text-align: left;
+
+}
+.fa-circle-chevron-left{
+    font-size: 3rem;
+    color: var(--colorPrincipal);
+    margin-top: 0;
+    margin-left:0 ;
+
+}
+
+
+/*
+RESPONSIVE
+*****************************************************************************/
+
+@media(max-width: 1300px)
+{
+    .layout__main{
+        margin-top: 10rem;
+    }    
+    .main__principal{
+        width: 110rem;
+    }
+
+}
+
+@media(max-width: 1150px){
+    .main__principal{
+        width: 85rem;
+    }
+
+
+}
+
+@media(max-width: 900px){
+    .main__principal{
+        width: 75rem;
+    }
+    .producto__imagen{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
+
+@media(max-width: 800px){
+    .main__principal{
+        width: 60rem;
+
+    }
+    .producto__box{
+        flex-direction: column;
+    }
+    .producto__infoBox{
+        padding-left: 8rem;
+        padding-right: 5rem;
+        margin-bottom: 5rem;
+    }
+
+}
+@media(max-width: 600px){
+    .main__principal{
+        width: 55rem;
+    }
+
+
+}
+@media(max-width: 550px){
+    .main__principal{
+        width: 100%;
+    }
+  
+    .producto__infoBox{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-bottom: 4rem;
+
+    }
+
+
+
+}

@@ -1,0 +1,112 @@
+/*********************************************************CSS DEL HEADER
+ * ********************************************************************* */
+/*Container del header*/
+.layout__header{
+    width: 100%;
+    flex-basis: 14rem;
+
+    background: var(--colorBlanco);
+    border-bottom: 3px solid var(--colorPrincipal); 
+
+    position: fixed;
+    top: 0;
+
+    display: flex;    
+    flex-direction: row;
+
+}
+
+/*Container del logo*/
+.header__logo{
+    flex-basis: 90%;
+}
+/* Caja del logo */
+.logo__box{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container del menu */
+.header__menu{
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Caja del menu */
+.menu__box{
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+}
+
+/* Icono del menu */
+.menu__icon{
+    z-index: 99;
+    text-align: center;
+    font-size: 3.5rem;
+    color:var(--colorPrincipal);
+    cursor:pointer;
+    
+ }
+
+
+/* Icono de barras */
+ .menu__icon-bars{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+
+ }
+ /* Icono de x */
+ .menu__icon--xmark{
+    position: absolute;
+    top: 16%;
+    left: 30%;
+    font-size: 3.5rem;
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+/*
+RESPONSIVE
+*****************************************************************************/
+@media(max-width: 1300px){
+    .menu__box{
+        position: relative;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .logo__img{
+        width: 250px;
+        margin: 1rem;
+    }
+    .menu__icon{
+        font-size: 2.5rem;
+    }
+    .menu__icon--xmark{
+        font-size: 2.5rem;
+    }
+    .aside__form{
+        top: 9.2rem;
+    }
+}

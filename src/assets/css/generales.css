@@ -1,0 +1,33 @@
+/****************************************CSS DE LOS ESTILOS GENERALES
+ * ********************************************************************* */
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--colorTexto);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--colorNegro);
+}
+a, input{
+    cursor: pointer;
+}
+
+
+/*
+LAYOUT PRINCIPAL
+*****************************************************************************/
+.layout{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}

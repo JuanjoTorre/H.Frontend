@@ -1,0 +1,61 @@
+/*************************************CSS GENERAL DE LOS FORMULARIOS
+ * ********************************************************************* */
+.layout__main{
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+.main__titulo{
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.titulo__text{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.main__formulario{
+    margin: auto;
+}
+.formulario__box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(79, 107, 215, 0.3);
+    box-shadow: rgba( 79, 107, 215,0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    
+
+}
+.formulario__form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+  
+}
+.form__linea{
+    display: flex;
+    flex-direction: row;
+    margin: 0.7rem 2.5rem;
+}
+.form__label{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.form__input{
+    width: 25rem;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+/* Estilos de los mensajes */
+.alert-success{
+    color: green;
+}
+.alert-danger{
+    color: red;
+}

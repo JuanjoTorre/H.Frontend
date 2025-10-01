@@ -1,0 +1,10 @@
+/*****************************************************VARIABLES DEL CSS
+ * ********************************************************************* */
+:root{
+    --colorPrincipal: rgb(79, 107, 215);
+    --colorBlanco: #FFFFFF;
+    --colorNegro: #222;
+    --colorBackground: #f2f7f9;
+    --colorTexto: #555;
+    --colorTrasparent: transparent;  
+}

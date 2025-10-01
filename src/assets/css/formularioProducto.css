@@ -1,0 +1,153 @@
+/*************************************CSS DEL FORMULARIO DE PRODUCTO
+ * ********************************************************************* */
+.main__formulario-producto {
+    width: 100%;
+    height: 100%;
+}
+
+.formulario__box-producto {
+    width: 80%;
+}
+.formulario__boxCajaUno {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario__boxIzda {
+    width: 48%;
+    height: 35rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(79, 107, 215, 0.3);
+    box-shadow: rgba(79, 107, 215, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+.formulario__boxDcha {
+    width: 48%;
+    height: 35rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(79, 107, 215, 0.3);
+    box-shadow: rgba(79, 107, 215, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+
+.form__label-producto {
+    width: 30rem;
+}
+.form__input-producto {
+    width: 30rem;
+}
+.form__input-textarea {
+    width: 30rem;
+    height: 10rem;
+}
+.form__input-submitProducto {
+    width: 40%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.formulario__select-producto {
+    width: 30rem;
+    color: var(--colorTexto);
+}
+
+.boxDcha__uno {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.boxDcha__dos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.boxDcha__tres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.file-select {
+    width: 30rem;
+    position: relative;
+    display: inline-block;
+}
+
+.file-select::before {
+    background-color: var(--colorPrincipal);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: "Seleccionar"; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.file-select input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+}
+
+#src-file1::before {
+    content: "Seleccionar Archivo";
+}
+
+/*Estilos de los checbox del final*/
+.form__variosBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.varios__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: 600;
+}
+.varios__restringidos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.varios__dirigidos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.restringidos__elemento-titulo {
+    text-align: center;
+}
+.varios__input {
+    margin-top: 0.5rem;
+    width: 10rem;
+    text-align: center;
+    background-color: blue;
+}
+.form__input-submitProducto {
+  width: 15rem;
+}

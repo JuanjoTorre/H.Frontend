@@ -1,0 +1,20 @@
+/****************************************CSS DEL RESTO DE FORMULARIOS
+ * ********************************************************************* */
+.main__formulario-resto{
+    width: 120rem;
+    height: 100%;
+}
+.formulario__box-resto{
+    width:40%;
+}
+.form__label-resto{
+    width: 17rem;
+}
+.form__input-resto{
+    width: 25rem;
+}
+.form__input-submitResto{
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+}
