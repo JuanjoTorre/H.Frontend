@@ -17,7 +17,7 @@ export const Index = () => {
 	}, []);
 	const iniciar = async () => {
 		//Limpio el local Storage
-		localStorage.clear();
+		localStorage.setItem('Auth', false);
 
 		try {
 			//Obtengo un listado de productos
@@ -41,6 +41,11 @@ export const Index = () => {
 		} catch (error) {
 			console.log("error general");
 		}
+	
+	//Funcion que carga una imagen alternativa
+	const imgAlt = () => {
+
+	}	
 	};
 	return (
 		<main className="layout__main">
@@ -68,16 +73,16 @@ export const Index = () => {
 											>
 												<img
 													src={`images/${producto.codigo}.jpg`}
-													alt={
-														producto.imagen
-													}
+
+													alt={""}
+	
 													className="imagenes__imagen"
 												></img>
 											</NavLink>
 											<div className="imagenes__boxTexto">
 												<p className="imagenes__texto">
 													{
-														producto.nombre
+														producto.name
 													}
 												</p>
 											</div>

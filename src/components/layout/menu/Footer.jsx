@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className="footer__box">
                 <div className="footer__box">
                     <p className="footer__texto">
-                        Desarrollado por J.J.Torre  &copy; para honyaldi@honyaldi.com
+                        Desarrollado por J.J.T  &copy; para honyaldi@honyaldi.com <i class="fa-solid fa-phone"></i> 943333874
                         <span className="footer__texto--transparente">--</span>
                         <NavLink to="entrada" className="footer__enlace">
                             <i className=" footer__icon fa-solid fa-gear"></i>

@@ -32,12 +32,13 @@ export const CrudGenericos = () => {
                     "Content-Type": "application/json",
                 },
             });
+   
             //Recojo la informacion que devuelve la consulta y la convierto a formato json
             const data = await request.json();
 
             //Cuando todo esta correcto
             if (data.status == "success") {
-                setGen(data.todosGN);
+                setGen(data.listGN);
 
             } else {
                 console.log("error");

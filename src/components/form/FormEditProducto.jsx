@@ -11,14 +11,14 @@ export const FormEditProducto = () => {
     const location = useLocation();
 
     //Creo estados para construir el objeto a pasar al metodo de saveProducto
-    const [nombre, setNombre] = useState(location.state.producto.name);
+    const [name, setNombre] = useState(location.state.producto.name);
     const [codigo, setCodigo] = useState(location.state.producto.codigo);
     const [proveedor, setProveedor] = useState(location.state.producto.proveedor);
     const [generico, setGenerico] = useState(location.state.producto.generico);
     const [concreto, setConcreto] = useState(location.state.producto.concreto);
     const [integral, setIntegral] = useState(location.state.producto.integral);
-    const [azucar, setAzucar] = useState(location.state.producto.azucar);
-    const [gluten, setGluten] = useState(location.state.producto.gluten);
+    const [sin_azucar, setAzucar] = useState(location.state.producto.azucar);
+    const [sin_gluten, setGluten] = useState(location.state.producto.gluten);
     const [activo, setActivo] = useState(location.state.producto.activo);
     const [oferta, setOferta] = useState(location.state.producto.oferta);
     const [hosteleria, setHosteleria] = useState(location.state.producto.hosteleria);
@@ -26,6 +26,7 @@ export const FormEditProducto = () => {
     const [vending, setVending] = useState(location.state.producto.vending);
     const [descripcion, setDescripcion] = useState(location.state.producto.descripcion);
     const [imagen, setImagen] = useState(location.state.producto.imagen);
+    const [pdf, setPdf] = useState(location.state.producto.pdf);
 
     //Creo un estado para gestionar el guardado de los datos
     const [saved, setSaved] = useState("Not_Saved");
@@ -95,7 +96,7 @@ export const FormEditProducto = () => {
 
             //Cuando todo esta correcto
             if (data.status == "success") {
-                setGen(data.todosGN);
+                setGen(data.listGN);
             } else {
                 console.log("no");
             }
@@ -134,17 +135,18 @@ export const FormEditProducto = () => {
         //Prevenimos la actualizacion de la pantalla
         e.preventDefault();
         setImagen(codigo+`.jpg`);
+        setPdf(codigo+`.jpg`);
 
         //Recogo los datos del formulario
         let newProducto = {
-            nombre,
+            name,
             codigo,
             proveedor,
             generico,
             concreto,
             integral,
-            azucar,
-            gluten,
+            sin_azucar,
+            sin_gluten,
             alimentacion,
             hosteleria,
             vending,
@@ -152,12 +154,15 @@ export const FormEditProducto = () => {
             activo,
             descripcion,
             imagen,
+            pdf,
         };
 
-        console.log(newProducto);
+console.log(newProducto)
         //Controlo que no venga vacia
-        if (newProducto === "") {
+        if (newProducto.name === "") {
             setSaved("Sin datos");
+
+
         } else {
             try {
                 //Guardo el concreto en la bbdd
@@ -186,6 +191,7 @@ export const FormEditProducto = () => {
                 window.location = "/crudProducto";
             }, 1000);
         }
+
     };
     return (
         <main className="layout__main">
@@ -230,7 +236,7 @@ export const FormEditProducto = () => {
                                         {prov.map((item) => {
                                             return (
                                                 <option className="select__option" key={item._id}>
-                                                    {item.nombre}
+                                                    {item.name}
                                                 </option>
                                             );
                                         })}
@@ -248,7 +254,7 @@ export const FormEditProducto = () => {
                                         {gen.map((item) => {
                                             return (
                                                 <option className="select__option" key={item._id}>
-                                                    {item.nombre}
+                                                    {item.name}
                                                 </option>
                                             );
                                         })}
@@ -278,6 +284,9 @@ export const FormEditProducto = () => {
                                         type="text"
                                         className="form__input form__input-textarea"
                                         name="descripcion"
+                                        cols="50"
+										rows="10"
+										wrap="soft"
                                         defaultValue={location.state.producto.descripcion}
                                         onChange={(e) => setDescripcion(e.target.value)}
                                     ></textarea>

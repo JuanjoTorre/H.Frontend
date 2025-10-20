@@ -26,7 +26,7 @@ export const CrudProductos = () => {
 
         try {
             //Obtenemos todos los productos
-            const request = await fetch(Global.url + "producto/listarProductosOA", {
+            const request = await fetch(Global.url + "producto/listarProductos", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export const CrudProductos = () => {
     //METODO PARA BORRAR UN PRODUCTO
     const borrarProducto = async (e, id) => {
         try {
-            const request = await fetch(Global.url + `product/borrarProducto/${id}`, {
+            const request = await fetch(Global.url + `producto/borrarProducto/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -114,7 +114,7 @@ export const CrudProductos = () => {
                                     <p className="linea__texto">{item.codigo}</p>
                                 </div>
                                 <div className="linea__texto linea__texto-textoP ancho2">
-                                    <p className="linea__texto">{item.nombre}</p>
+                                    <p className="linea__texto">{item.name}</p>
                                 </div>
                                 {/* <div className="linea__texto linea__texto-descripcionP ancho1">
                                     <p className="linea__texto">{item.descripcion}</p>

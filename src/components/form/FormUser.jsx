@@ -1,10 +1,11 @@
-/* eslint-disable no-unused-vars */
 /**************************************FORMULARIO DE  NUEVO USUARIO
  * ********************************************************************* */
+/* eslint-disable no-unused-vars */
 //import { Authentication } from "../../helpers/Authentication";
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import { useForm } from "../../helpers/useForm";
 import { Global } from "../../helpers/Global";
+import { Authentication } from "../../helpers/Authentication";
 
 export const FormUser = () => {
     //Recibo el hook useForm
@@ -13,7 +14,15 @@ export const FormUser = () => {
     //Creo un estado para gestionar el guardado de los datos
     const [saved, setSaved] = useState("Not_Saved");
 
+    //CUANDO SE CARGUE EL COMPONENTE SE EJECUTARA LO SIGUIENTE
+    useEffect(() => {
+        iniciar();
+    }, []);
 
+    const iniciar = () => {
+        //Compruebo que este identificado
+        Authentication();
+    };
 
     //METODO QUE RECOGE LOS DATOS DEL FORMULARIO AL PULSAR EL BOTON "ENVIAR"
     const saveUser = async (e) => {
@@ -22,14 +31,14 @@ export const FormUser = () => {
 
         //Recogo los datos del formulario
         let newUser = {
-            name: form.nombre,
+            name: form.name,
             password: form.password,
 
         };
         
 
         //Controlo que no venga vacia
-        if (newUser.name === "" || newUser.password == "") {
+        if (newUser.name === "" || newUser.password === "") {
             setSaved("Sin datos");
         } else {
             try {

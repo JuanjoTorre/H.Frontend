@@ -1,7 +1,7 @@
 /*************************************CSS GENERAL DE LOS FORMULARIOS
  * ********************************************************************* */
 .layout__main{
-    margin-top: 18rem;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
 }

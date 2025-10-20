@@ -1,7 +1,8 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
 /********************************************LAYOUT DE  ASIDE DE MENU
  * ********************************************************************* */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
+
 //import React from 'react'
 import { useEffect, useState } from "react";
 import { Global } from "../../../helpers/Global";
@@ -44,7 +45,7 @@ export const Aside = () => {
                     "Content-Type": "application/json",
                 },
             });
-            console.log(request)
+
             //Recojo la informacion que devuelve la consulta y la convierto a formato json
             const data = await request.json();
 
@@ -72,7 +73,7 @@ export const Aside = () => {
 
             //Cuando todo esta correcto
             if (data.status == "success") {
-                setGen(data.todosGN);
+                setGen(data.listGN);
             } else {
                 console.log("no");
             }

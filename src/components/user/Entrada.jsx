@@ -21,7 +21,7 @@ export const Entrada = () => {
         e.preventDefault();
         //Recogemos los datos del formulario
         let user = form;
-
+console.log(user)
         //Comprobamos si el usuario existe y su contraseña es correcta
         const request = await fetch(Global.url + "user/login", {
             method: "POST",
@@ -32,19 +32,20 @@ export const Entrada = () => {
         });
         //Recojo la informacion que devuelve la consulta y la convierto a formato JSON
         const data = await request.json();
-
+console.log(data)
 
         //Si el resultado es correcto redirecciono a '/portada' o en caso contrario a la raiz
         if (data.status == "success") {
             //Persistimos los datos en el navegador
             // localStorage.setItem('id', data.message._id);
-            // localStorage.setItem('name', data.message.nombre);
+            // localStorage.setItem('name', data.message.name);
             // localStorage.setItem('password', data.message.password);
+            localStorage.setItem('Auth', data.status)
 
             //Cambio el estado de UserLoged
             setUserLoged("login");
             //Seteo los datos en el auth
-            //setAuth(data.status);
+            setUserLoged(data.status);
             //Redirecciono hacia la portada
             setTimeout(() => {
                  window.location = "/portada";
@@ -52,7 +53,8 @@ export const Entrada = () => {
         } else {
             //Cambio el estado de UserLoged
             setUserLoged("error_login");
-            //Redirecciono hacia la portada
+            // localStorage.setItem('Auth', false);
+            // Redirecciono hacia la portada
             setTimeout(() => {
                 window.location = "/";
             }, 1000);
@@ -65,12 +67,12 @@ export const Entrada = () => {
                 <div className="main__entrada">
                     <div className="entrada__box">
                         <form className="entrada__formulario" onSubmit={login}>
-                            <label htmlFor="nombre" className="entrada__label-usuario">
+                            <label htmlFor="name" className="entrada__label-usuario">
                                 Usuario
                             </label>
                             <input
                                 type="text"
-                                name="nombre"
+                                name="name"
                                 className="entrada__input-usuario"
                                 onChange={changed}
                             ></input>

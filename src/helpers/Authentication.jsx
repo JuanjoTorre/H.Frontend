@@ -2,13 +2,14 @@
  * ********************************************************************* */
 export const Authentication = ()=> {  
 
-    //const id = localStorage.getItem("id");
+    const auth = localStorage.getItem("Auth");
 
+console.log(auth)
 
-    // if(id !=="65e773a8c6f461a6d6b5a5e6")
-    // {
-    //     window.location="/";
-    // }
+    if(auth !== "success")
+    {
+        window.location="/";
+    }
 
 
 };
