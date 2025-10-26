@@ -37,6 +37,7 @@ export const Aside = () => {
 
     //Metodo que extraera el listado de proveedores
     const proveedores = async () => {
+        console.log(Global.url)
         try {
             //Obtenemos todos los proveedores
             const request = await fetch(Global.url + "proveedor/listarProveedor", {
