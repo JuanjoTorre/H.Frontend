@@ -62,7 +62,7 @@ export const IndexConcreto = () => {
                                     <div className="imagenes__box" key={producto._id}>
                                         <NavLink to={`/producto/?id=${producto._id}`} className="imagenes__enlace">
                                             <img
-                                                src={`images/${producto.codigo}.jpg`}
+                                                src={`/images/${producto.codigo}.jpg`}
                                                 
                                                 alt=""
                                                 className="imagenes__imagen"
