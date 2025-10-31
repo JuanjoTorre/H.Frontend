@@ -14,7 +14,7 @@
     position: fixed;
 
     width: 30rem;
-    height: 65%;
+    height: 100%;
 
     background: var(--colorPrincipal); 
     transition: all 600ms ease;

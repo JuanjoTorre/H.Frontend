@@ -109,7 +109,7 @@ export const Producto = () => {
 
 												{prod.descripcion}
 
-											;
+											
 										</p>
 									</div>
 								</div>

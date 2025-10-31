@@ -84,9 +84,11 @@
     font-weight: bold;
 }
 .producto__caracteristicas{
-    white-space: pre;
-    height: 20rem;
-    text-align: justify;
+    white-space: normal;
+    max-width: 50rem;
+    max-height: 50rem;
+
+
 
 
 }
